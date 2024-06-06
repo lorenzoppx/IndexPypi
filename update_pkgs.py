@@ -15,7 +15,7 @@ def execute_main(pkg_name, versions, short_desc, homepage):
     os.environ["PKG_ACTION"] = "REGISTER"
     os.environ["PKG_NAME"] = pkg_name
     os.environ["PKG_VERSION"] = versions[0]
-    os.environ["PKG_AUTHOR"] = "Nicolas Remond"
+    os.environ["PKG_AUTHOR"] = "Lorenzo Xavier"
     os.environ["PKG_SHORT_DESC"] = short_desc
     os.environ["PKG_HOMEPAGE"] = homepage
     github_action()
@@ -34,10 +34,10 @@ def execute_main(pkg_name, versions, short_desc, homepage):
 
 if __name__ == "__main__":
     # transformers
-    pkg_name = "transformers"
-    versions = ["v3.0.0"]
-    short_desc = 'A simulator for electrical components'
-    homepage = 'https://github.com/huggingface/transformers'
+    pkg_name = "fordpippp"
+    versions = ["v1.0.1"]
+    short_desc = 'Completly library processinig'
+    homepage = 'https://github.com/labic-pypi/Ford-pip'
     execute_main(pkg_name, versions, short_desc, homepage)
     
     # public-hello
